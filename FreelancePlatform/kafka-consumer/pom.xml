@@ -2,10 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<modules>
-		<module>kafka-producer</module>
-		<module>kafka-consumer</module>
-	</modules>
+	<packaging>jar</packaging>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -13,11 +10,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>freelancePlatform</artifactId>
+	<artifactId>kafka-consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>freelancePlatform</name>
-	<description>freelancePlatform</description>
-	<packaging>pom</packaging>
+	<name>kafka-consumer</name>
+	<description>kafka-consumer</description>
 	<properties>
 		<java.version>22</java.version>
 	</properties>
@@ -45,6 +41,11 @@
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
 		</dependency>
 	</dependencies>
 
